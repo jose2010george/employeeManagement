@@ -14,11 +14,20 @@ namespace EmployManagementSystem.Data.Repositories
         {
         }
 
-        public IEnumerable<Employee> Get()
+        public IEnumerable<Employee> Get(long? departmentId=null)
         {
-            return base.Get(
-                orderBy: d => d.OrderBy(e => e.Id),
-                includeProperties: "Department");
+            if(departmentId.HasValue)
+            {
+                return base.Get(e => e.Department_id == departmentId.Value,
+               orderBy: d => d.OrderBy(e => e.Id),
+               includeProperties: "Department");
+            }
+            else
+            {
+                return base.Get(
+               orderBy: d => d.OrderBy(e => e.Id),
+               includeProperties: "Department");
+            }           
         }
         public override async Task<Employee> GetByID(long id)
         {

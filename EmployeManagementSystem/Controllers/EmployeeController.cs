@@ -23,9 +23,10 @@ namespace EmployeManagementSystem.Controllers
             _departmentRepository = departmentRepository;
         }
 
-        public ActionResult Index()
+        public ActionResult Index(long? departmentId=null)
         {
-            return View(_repository.Get());
+            var employees = _repository.Get(departmentId);
+            return View(employees);
         }
  
         public ActionResult Create()

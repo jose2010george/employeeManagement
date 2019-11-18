@@ -32,7 +32,26 @@
                 @Html.DisplayFor(modelItem => item.IsActive)
             </td>
             <td>
-                @Html.Raw($"{ item.Employees.Count} Employees")
+                @{ 
+                    var employeeCount = item.Employees.Count;
+                    if(employeeCount==0)
+                    {
+                        @Html.Raw($"{ item.Employees.Count} Employees");
+                    }
+                    else
+                    {
+                        @Html.ActionLink(
+                                        $"{ item.Employees.Count} Employees",
+                                        "Index",
+                                        "Employee",
+                                        new
+                                        {
+                                            departmentId = item.Id
+                                        }
+                                    );
+                    }
+                }
+                 
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
