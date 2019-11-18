@@ -3082,11 +3082,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployManagementSystem.Data\\EmployManagementSystem.Data.csproj",
+      "projectUniqueName": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployManagementSystem.Data\\EmployManagementSystem.Data.csproj",
       "projectName": "EmployManagementSystem.Data",
-      "projectPath": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployManagementSystem.Data\\EmployManagementSystem.Data.csproj",
+      "projectPath": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployManagementSystem.Data\\EmployManagementSystem.Data.csproj",
       "packagesPath": "C:\\Users\\joseg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployManagementSystem.Data\\obj\\",
+      "outputPath": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployManagementSystem.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

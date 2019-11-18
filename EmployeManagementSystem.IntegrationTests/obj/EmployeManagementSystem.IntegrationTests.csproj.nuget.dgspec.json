@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployeManagementSystem.IntegrationTests\\EmployeManagementSystem.IntegrationTests.csproj": {}
+    "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployeManagementSystem.IntegrationTests\\EmployeManagementSystem.IntegrationTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployeManagementSystem.IntegrationTests\\EmployeManagementSystem.IntegrationTests.csproj": {
+    "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployeManagementSystem.IntegrationTests\\EmployeManagementSystem.IntegrationTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployeManagementSystem.IntegrationTests\\EmployeManagementSystem.IntegrationTests.csproj",
+        "projectUniqueName": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployeManagementSystem.IntegrationTests\\EmployeManagementSystem.IntegrationTests.csproj",
         "projectName": "EmployeManagementSystem.IntegrationTests",
-        "projectPath": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployeManagementSystem.IntegrationTests\\EmployeManagementSystem.IntegrationTests.csproj",
+        "projectPath": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployeManagementSystem.IntegrationTests\\EmployeManagementSystem.IntegrationTests.csproj",
         "packagesPath": "C:\\Users\\joseg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployeManagementSystem.IntegrationTests\\obj\\",
+        "outputPath": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployeManagementSystem.IntegrationTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

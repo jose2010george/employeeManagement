@@ -7872,11 +7872,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployeManagementSystem.UnitTests\\EmployeManagementSystem.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployeManagementSystem.UnitTests\\EmployeManagementSystem.UnitTests.csproj",
       "projectName": "EmployeManagementSystem.UnitTests",
-      "projectPath": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployeManagementSystem.UnitTests\\EmployeManagementSystem.UnitTests.csproj",
+      "projectPath": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployeManagementSystem.UnitTests\\EmployeManagementSystem.UnitTests.csproj",
       "packagesPath": "C:\\Users\\joseg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployeManagementSystem.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployeManagementSystem.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -7896,11 +7896,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployeManagementSystem\\EmployeManagementSystem.csproj": {
-              "projectPath": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployeManagementSystem\\EmployeManagementSystem.csproj"
+            "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployeManagementSystem\\EmployeManagementSystem.csproj": {
+              "projectPath": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployeManagementSystem\\EmployeManagementSystem.csproj"
             },
-            "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployManagementSystem.Data\\EmployManagementSystem.Data.csproj": {
-              "projectPath": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployManagementSystem.Data\\EmployManagementSystem.Data.csproj"
+            "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployManagementSystem.Data\\EmployManagementSystem.Data.csproj": {
+              "projectPath": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployManagementSystem.Data\\EmployManagementSystem.Data.csproj"
             }
           }
         }

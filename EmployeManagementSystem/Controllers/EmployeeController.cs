@@ -37,19 +37,27 @@ namespace EmployeManagementSystem.Controllers
         [HttpPost, ValidateAntiForgeryToken] 
         public async Task<IActionResult> Create([Bind("FirstName ,LastName ,EmailAdress ,PhoneNumber ,Address ,City ,State ,ZipCode ,UserName ,Password ,Department_id")] Employee employee)
         {
-            if (ModelState.IsValid)
-            {
-                var employeeWithEmail = _repository.FindByEmail(employee.EmailAdress);
-                if(employeeWithEmail==null)
+            try
+            {           
+                if (ModelState.IsValid)
                 {
-                    _repository.Insert(employee);
-                    await _repository.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
+                    var employeeWithEmail = _repository.FindByEmail(employee.EmailAdress);
+                    if(employeeWithEmail==null)
+                    {
+                        _repository.Insert(employee);
+                        await _repository.SaveChangesAsync();
+                        return RedirectToAction(nameof(Index));
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("EmailAdress", "Email already already exists");
+                    }              
                 }
-                else
-                {
-                    ModelState.AddModelError("EmailAdress", "Email already already exists");
-                }              
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while adding employee");
+                throw;
             }
             ViewData[DepartmentID] = new SelectList(_departmentRepository.GetActiveDepartments(), "Id", "Name");
             return View(employee);
@@ -87,10 +95,11 @@ namespace EmployeManagementSystem.Controllers
                         ModelState.AddModelError("EmailAdress", "Email already already exists");
                     }
                 }
-            }
+            } 
             catch (Exception ex)
             {
-                var exception = ex;
+                _logger.LogError(ex, "An error occurred while editing employee");
+                throw;
             }
             ViewData[DepartmentID] = new SelectList(_departmentRepository.GetActiveDepartments(), "Id", "Name");
             return View();
@@ -113,7 +122,8 @@ namespace EmployeManagementSystem.Controllers
             }
             catch (Exception ex)
             {
-                var exception = ex;
+                _logger.LogError(ex, "An error occurred while deleting employee");
+                throw;
             }
             return View();
         }

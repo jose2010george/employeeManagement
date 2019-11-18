@@ -38,20 +38,28 @@ namespace EmployeManagementSystem.Controllers
         [HttpPost, ValidateAntiForgeryToken] 
         public async Task<IActionResult> Create([Bind("Name")] Department department)
         {
-            if (ModelState.IsValid)
-            {                
-                var departmentWithName = _repository.FindByName(department.Name);
-                if (departmentWithName == null)
+            try
+            {
+                if (ModelState.IsValid)
                 {
-                    _repository.Insert(department);
-                    await _repository.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
+                    var departmentWithName = _repository.FindByName(department.Name);
+                    if (departmentWithName == null)
+                    {
+                        _repository.Insert(department);
+                        await _repository.SaveChangesAsync();
+                        return RedirectToAction(nameof(Index));
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("Name", "Department name already already exists");
+                    }
                 }
-                else
-                {
-                    ModelState.AddModelError("Name", "Department name already already exists");
-                }
-            }           
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while adding department");
+                throw;
+            }
             return View(department);
         }
 
@@ -82,9 +90,10 @@ namespace EmployeManagementSystem.Controllers
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                var exception = ex;
+                _logger.LogError(ex, "An error occurred while editing department");
+                throw;
             }
             return View();
         }
@@ -109,7 +118,8 @@ namespace EmployeManagementSystem.Controllers
             }
             catch (Exception ex)
             {
-                var exception = ex;
+                _logger.LogError(ex, "An error occurred while deleting department");
+                throw;
             }
             return View();
         }

@@ -7363,11 +7363,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployeManagementSystem\\EmployeManagementSystem.csproj",
+      "projectUniqueName": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployeManagementSystem\\EmployeManagementSystem.csproj",
       "projectName": "EmployeManagementSystem",
-      "projectPath": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployeManagementSystem\\EmployeManagementSystem.csproj",
+      "projectPath": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployeManagementSystem\\EmployeManagementSystem.csproj",
       "packagesPath": "C:\\Users\\joseg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployeManagementSystem\\obj\\",
+      "outputPath": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployeManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -7387,8 +7387,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployManagementSystem.Data\\EmployManagementSystem.Data.csproj": {
-              "projectPath": "C:\\Users\\joseg\\source\\repos\\EmployeManagementSystem\\EmployManagementSystem.Data\\EmployManagementSystem.Data.csproj"
+            "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployManagementSystem.Data\\EmployManagementSystem.Data.csproj": {
+              "projectPath": "C:\\Users\\joseg\\source\\repos\\employeeManagement\\EmployManagementSystem.Data\\EmployManagementSystem.Data.csproj"
             }
           }
         }
