@@ -1,0 +1,24 @@
+﻿@model EmployManagementSystem.Data.Models.Department
+
+@{
+    ViewData["Title"] = "Delete Department";
+}
+
+<h4>Delete Department</h4>
+
+<p class="text-danger">@ViewData["ConcurrencyErrorMessage"]</p>
+
+<h3>Are you sure you want to delete the department @Html.Raw($"'{Model.Name}'")?</h3>
+<div>   
+    <hr /> 
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" />
+        </div>
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>

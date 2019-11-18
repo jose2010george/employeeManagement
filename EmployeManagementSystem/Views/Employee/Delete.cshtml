@@ -1,0 +1,30 @@
+﻿@model EmployManagementSystem.Data.Models.Employee
+
+@{
+    ViewData["Title"] = "Details ";
+}
+    <h4>Delete Employee</h4>
+
+<p class="text-danger">@ViewData["ConcurrencyErrorMessage"]</p>
+
+<h3>Are you sure you want to delete the Employee @Html.Raw($"'{Model.EmailAdress}'")?</h3>
+<div>
+    <hr />
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" />
+        </div>
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>
+
+ 
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
