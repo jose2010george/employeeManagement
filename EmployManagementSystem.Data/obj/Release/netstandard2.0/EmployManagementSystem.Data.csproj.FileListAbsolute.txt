@@ -1,8 +1,0 @@
-C:\Users\joseg\source\repos\EmployeManagementSystem\EmployManagementSystem.Data\bin\Release\netstandard2.0\EmployManagementSystem.Data.deps.json
-C:\Users\joseg\source\repos\EmployeManagementSystem\EmployManagementSystem.Data\bin\Release\netstandard2.0\EmployManagementSystem.Data.dll
-C:\Users\joseg\source\repos\EmployeManagementSystem\EmployManagementSystem.Data\bin\Release\netstandard2.0\EmployManagementSystem.Data.pdb
-C:\Users\joseg\source\repos\EmployeManagementSystem\EmployManagementSystem.Data\obj\Release\netstandard2.0\EmployManagementSystem.Data.csprojAssemblyReference.cache
-C:\Users\joseg\source\repos\EmployeManagementSystem\EmployManagementSystem.Data\obj\Release\netstandard2.0\EmployManagementSystem.Data.AssemblyInfoInputs.cache
-C:\Users\joseg\source\repos\EmployeManagementSystem\EmployManagementSystem.Data\obj\Release\netstandard2.0\EmployManagementSystem.Data.AssemblyInfo.cs
-C:\Users\joseg\source\repos\EmployeManagementSystem\EmployManagementSystem.Data\obj\Release\netstandard2.0\EmployManagementSystem.Data.dll
-C:\Users\joseg\source\repos\EmployeManagementSystem\EmployManagementSystem.Data\obj\Release\netstandard2.0\EmployManagementSystem.Data.pdb

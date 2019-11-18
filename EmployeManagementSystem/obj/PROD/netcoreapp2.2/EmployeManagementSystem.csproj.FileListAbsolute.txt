@@ -1,4 +1,0 @@
-C:\Users\joseg\source\repos\EmployeManagementSystem\EmployeManagementSystem\bin\PROD\netcoreapp2.2\EmployManagementSystem.Data.dll
-C:\Users\joseg\source\repos\EmployeManagementSystem\EmployeManagementSystem\obj\PROD\netcoreapp2.2\EmployeManagementSystem.csprojAssemblyReference.cache
-C:\Users\joseg\source\repos\EmployeManagementSystem\EmployeManagementSystem\obj\PROD\netcoreapp2.2\EmployeManagementSystem.AssemblyInfoInputs.cache
-C:\Users\joseg\source\repos\EmployeManagementSystem\EmployeManagementSystem\obj\PROD\netcoreapp2.2\EmployeManagementSystem.AssemblyInfo.cs
